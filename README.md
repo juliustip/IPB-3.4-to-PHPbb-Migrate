@@ -9,7 +9,7 @@ INSTRUCTIONS FROM AUTHOR:
 Converting from IPB 3.4 to phpBB 3.2 proved quite a challenge, mainly because of the sheer size of the board, along with some dedicated stuff that was implemented. I took these steps:
 
   1.  Backup current state IPB (files + db)
-  2.  Install phpBB 3.1.10custom {phpbb_3110_custom.zip}
+  2.  Install phpBB 3.0.12custom {phpbb_3012_custom.zip}
   3.  Run convertor for IPB to phpBB 3.0.12 {ipb34_convertor_0.0.1.zip} (https://www.phpbb.com/community/viewtopic.php?p=13539291#p13539291)
         In ./install/install_convert.php you find the vars $batch_size & $num_rows. Play with these a bit. I noticed that I can ramp them up to about 20000 resp. 600 for the most part, but I need to lower them to the default 6000 resp. 60 when the convertor approaches post_skip_rows ± 700000.
         This depends on your board and server, so make sure you run some tests to prevent timeouts on your board.
